@@ -1,0 +1,82 @@
+AI-Driven Practical
+Time: 2.5 Hours
+Important Note:
+This task must be 100% AI-driven development. You are allowed to use any AI tool to complete the task.
+
+Screen recording is compulsory for the entire 1-hour development process.
+
+Nest (Version: Minimum 11.0)
+1. Constraints:
+Do not write business logic or model utilization inside the controller, use service files, repositories, etc.
+
+Use only SQL-based database
+
+2. You will be judged on the following:
+How well-abstracted your code is. Negative points for duplicated code
+
+How well-written & clean your code is
+
+Consider the following principles: KISS, DRY, YAGNI, inheritance, readability, consistency, architectural structure (SOLID principles), etc.
+
+It is about being productive and writing high-quality code, not just the quantity of code.
+
+React (Version: Minimum 18.0.0)
+1. Constraints:
+Use React + Typescript + Redux
+
+Use Material UI / Bootstrap
+
+2. Evaluation Criteria:
+Libraries used (besides React, TypeScript is compulsory)
+
+Quality of UI – animations, transitions, and polish
+
+Quality of code – apply the same architectural principles as mentioned for Node.js
+
+3. REST APIs:
+Integrate REST APIs with the proper request methods
+
+Additional Notes:
+Add the practical to a public GitHub repository and include the link in the email.
+
+Add Postman collection or swagger documentation details for API
+
+Include all steps to run the practical in the README.md file.
+
+Attach a screen recording of the performed practical.
+
+Description
+You will be working with shifts. A shift can contain multiple shifts dates and consists of the following fields:
+
+Title – Required, max 100 characters
+
+Description – Optional, max 500 characters
+
+Dates – Required, format dd+mm+yyyy, minimum 1 entry, maximum 10 entries
+Start time – Required, format “hh”:“mm”
+
+End time – Required, format “hh”:“mm” (must be greater than start time)
+
+Price – Required (can be 0)
+
+Type – Required, must be one of: {Consultation, Telephone, Ambulance}
+
+Filters:
+A dynamic slider to filter by price (range should be the calculated min-max of records)
+
+Create/Update/Delete Drawer
+The same component should be used for these actions.
+
+When saving, do not allow overlapping times on the same day for the same type.
+
+1. Create
+Clicking the ADD SHIFT button should open the drawer.
+
+Apply validation as per the above requirements.
+
+The date picker should allow multiple date selections (use any React package).
+
+For every date entry, a new card should be created with the corresponding inputs (cards should be removable).
+
+2. Edit
+Clicking the edit button on a shift card should open the drawer and allow modifications.
